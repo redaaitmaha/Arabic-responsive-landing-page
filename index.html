@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page with Nav Menu</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tech</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>الرئيسية</li>
+                <li class="active">منتجات</li>
+                <li>من نحن</li>
+                <li>تواصل معنا</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">اختر  تخصصك.</p>
+            <p class="msg">اختر تخصصك. كيف أختار تخصص المستقبل. كيف تختار تخصصك ... ستتمكن من خلال هذا الموقع التعرف أكثر على الجوانب الهامة في عملية اختيار تخصصك ...</p>
+            <button class="cta">اقرأ المزيد</button>
+        </section>
+
+        <section class="right">
+            <img src="./images/img.png" alt="Langing image">
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>
